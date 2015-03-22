@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var forge = require('./lib/forge');
+var forge = require('../lib/forge');
 var localdb = require('forge-localdb');
 
 var store = new localdb({
@@ -27,4 +27,3 @@ var server = new forge({
       store.remove_lease(mac_addr, cb); },
     host: '192.168.119.1'
 });
-
